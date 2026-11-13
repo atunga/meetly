@@ -1,0 +1,24 @@
+{
+  "name": "meetly",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted booking pages with Google Calendar and Meet",
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "demo": "node src/server.js --demo",
+    "test": "node --test --test-concurrency=1",
+    "check": "node scripts/check.mjs",
+    "secrets": "node scripts/secrets.mjs",
+    "dev": "node src/server.js --demo",
+    "audit:release": "node scripts/audit-release.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atunga/meetly.git"
+  },
+  "license": "MIT"
+}
